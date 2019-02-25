@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="com.test.helmestask.main" target="11" />
+      <module name="com.test.helmestask.test" target="11" />
+      <module name="com.test.springmvctest.main" target="11" />
+      <module name="com.test.springmvctest.test" target="11" />
+      <module name="com.testtask.helmestask.main" target="11" />
+      <module name="com.testtask.helmestask.test" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

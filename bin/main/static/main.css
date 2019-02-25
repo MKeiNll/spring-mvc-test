@@ -1,0 +1,31 @@
+.sector-container {
+	width: 500px;
+	margin: 50px auto;
+}
+
+.success-container {
+	width: 250px;
+	margin: 50px auto;
+}
+
+.already-exists-container {
+	width: 200px;
+	margin: 50px auto;
+}
+
+.username-container {
+	width: 200px;
+	margin: 50px auto;
+}
+
+.username-input {
+	width: 200px;
+}
+
+select {
+	width: 500px;
+}
+
+.button {
+	width: 150px;
+}

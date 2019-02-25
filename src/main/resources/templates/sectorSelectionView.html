@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Pick sectors</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="main.css" rel="stylesheet" />
+</head>
+<body>
+	<div class="sector-container">
+		<h3>Please pick the sectors you are currently involved in.</h3>
+		<form method="post">
+			<select name="sectors" multiple size="20" required>
+				<div th:with="sectors = ${sectors}, nestingLevel = ${0}"
+					th:include="sectorGroup.html :: sectorgroup" th:remove="tag" />
+			</select> <br /> <br /> <input th:checked="${agreedToTerms}"
+				name="agreeToTerms" type="checkbox"> Agree to terms <br />
+			<br /> <input class="button" type="submit" value="Save">
+		</form>
+	</div>
+</body>
+</html>

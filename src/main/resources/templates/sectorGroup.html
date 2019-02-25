@@ -1,0 +1,15 @@
+<div th:fragment="sectorgroup" th:remove="tag">
+	<th:block th:each="sector : ${sectors}">
+		<span th:switch="${sector.childSectors.isEmpty()}">
+			<option th:selected="${selectedSectors.contains(sector)}"
+				th:value="${sector.id}" th:case="true"
+				th:text="${sector.sectorName}"></option>
+			<optgroup th:style="|padding-left:${nestingLevel * 15}px;|"
+				th:case="false" th:label="${sector.sectorName}">
+				<div
+					th:with="sectors = ${sector.childSectors}, nestingLevel = ${nestingLevel + 1}"
+					th:include="sectorGroup.html :: sectorgroup" th:remove="tag" />
+			</optgroup>
+		</span>
+	</th:block>
+</div>

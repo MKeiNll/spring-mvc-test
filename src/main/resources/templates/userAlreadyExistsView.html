@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>User exists</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="main.css" rel="stylesheet" />
+</head>
+<body>
+	<div class="already-exists-container">
+		<h3>User with specified name already exists.</h3>
+		<form action="/index" method="get">
+			<input name="name" type="hidden" th:value="${name}"> <input
+				name="update" type="hidden" value="true"> <input
+				class="button" value="Update information" type="submit" />
+		</form>
+		<br />
+		<form action="/index" method="get">
+			<input class="button" value="Return" type="submit" />
+		</form>
+	</div>
+</body>
+</html>
